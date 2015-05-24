@@ -32,10 +32,10 @@ public class SendThread extends Thread {
 
 
         // login
-        if (user.getName().equals("")) {
+        if (user.isLogin()) {
             loginRequest(user);
 
-            Log.d("network","login request is sended");
+            Log.d("network", "login request is sended");
         }
         // join
         else {

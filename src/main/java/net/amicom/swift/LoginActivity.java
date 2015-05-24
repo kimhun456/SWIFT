@@ -34,10 +34,12 @@ public class LoginActivity extends Activity {
                 User user = new User();
                 user.setId(loginText.getText().toString());
                 user.setPassword(pwText.getText().toString());
+                user.setLogin(true);
 
-                // makePostRequest(user);
-
-
+                /*
+                SendThread send = new SendThread(user);
+                send.start();
+                */
                 Intent intent = new Intent(getApplicationContext(), ContainerActivity.class);
                 startActivity(intent);
 

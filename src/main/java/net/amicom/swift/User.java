@@ -7,6 +7,7 @@ public class User {
     private String name;
     private String id;
     private String password;
+    private boolean login;
     private Container container;
 
     User(String name, String id, String password, Container container) {
@@ -17,7 +18,7 @@ public class User {
     }
 
 
-    User(){
+    User() {
 
     }
 
@@ -52,5 +53,13 @@ public class User {
 
     public void setContainer(Container container) {
         this.container = container;
+    }
+
+    public boolean isLogin() {
+        return login;
+    }
+
+    public void setLogin(boolean login) {
+        this.login = login;
     }
 }

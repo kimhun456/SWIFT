@@ -41,7 +41,7 @@ public class joinActivity extends Activity {
                 user.setName(nameText.getText().toString());
                 user.setId(idText.getText().toString());
                 user.setPassword(pwText.getText().toString());
-
+                user.setLogin(false);
 
                 Log.d("Http Post Response:", "make user");
 
